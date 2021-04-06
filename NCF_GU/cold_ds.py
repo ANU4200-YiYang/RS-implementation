@@ -36,7 +36,7 @@ cold_user.columns=['user']
 np.random.seed(0)
 random.seed(0)
 test_data_cold=pd.DataFrame([])
-for i in cold_user.index[0:3]:
+for i in cold_user.index:
     # print(i)
     # print(len(train_data[train_data['user']==i].item))
     item_num=len(train_data[train_data['user']==i].item)
