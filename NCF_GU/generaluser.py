@@ -9,6 +9,7 @@ import torch.nn as nn
 import modelGU
 import torch.backends.cudnn as cudnn
 import model
+import evaluate
 
 os.environ['CUDA_VISIBLE_DEVICES'] = '0'
 cudnn.benchmark = True
@@ -64,5 +65,24 @@ model.eval()
 predictions = model(user, item)
 print(predictions)
 _, indices = torch.topk(predictions,10)
-recommends = torch.take(item, indices).cpu()
+recommends = torch.take(item, indices).cpu().numpy().tolist()
 print(recommends)
+
+
+test_data_cold=pd.read_csv("Data/test_cold", index_col='index')
+HR, NDCG = [], []
+count=0
+for i in test_data_cold.user.unique():
+    # print(i)
+    item=test_data_cold[test_data_cold['user']==i].item
+    # print(item)
+    # exit()
+    gt_item=item.iloc[0].item()#get positive label
+    # print(type(gt_item))
+    # print(gt_item)
+    count+=1
+    HR.append(evaluate.hit(gt_item, recommends))
+    NDCG.append(evaluate.ndcg(gt_item, recommends))
+print(count)
+print(np.mean(HR))
+print(np.mean(NDCG))
