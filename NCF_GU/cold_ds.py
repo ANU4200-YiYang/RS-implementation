@@ -2,6 +2,7 @@ import pandas as pd
 import config
 import numpy as np
 import random
+
 train_data = pd.read_csv(config.train_rating, sep='\t',
                              header=None, names=['user', 'item'],
                              usecols=[0, 1], dtype={0: np.int32, 1: np.int32})
@@ -35,7 +36,7 @@ cold_user.columns=['user']
 # train_data.loc[train_data['user']==0,'item']
 np.random.seed(0)
 random.seed(0)
-test_data_cold=pd.DataFrame([])
+test_data_drop=pd.DataFrame([])
 for i in cold_user.index:
     # print(i)
     # print(len(train_data[train_data['user']==i].item))
@@ -46,7 +47,7 @@ for i in cold_user.index:
     # print(drop_idx_train)
     train_data=train_data.drop(drop_idx_train)
 
-    test_data_cold = test_data_cold.append(test_data[test_data['user'] == i])
+    test_data_drop = test_data_drop.append(test_data[test_data['user'] == i])
     # print(len(test_data_cold))
     test_data=test_data[test_data['user']!=i]
     # print(len(test_data))
@@ -54,5 +55,8 @@ for i in cold_user.index:
 
 
     # print(train_data[train_data['user']==i].item)
+train_data.to_csv("Data/train_cold", index=True,index_label='index')
+test_data.to_csv("Data/test_cold", index=True,index_label='index')
+# test_data_drop.to_csv("Data/test_drop", index=True,index_label='index')
 
-
+print()
