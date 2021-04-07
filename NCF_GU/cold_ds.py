@@ -49,14 +49,13 @@ for i in cold_user.index:
 
     test_data_drop = test_data_drop.append(test_data[test_data['user'] == i])
     # print(len(test_data_cold))
-    test_data=test_data[test_data['user']!=i]
+    # test_data=test_data[test_data['user']!=i]
     # print(len(test_data))
 
 
 
     # print(train_data[train_data['user']==i].item)
 train_data.to_csv("Data/train_cold", index=True,index_label='index')
-test_data.to_csv("Data/test_cold", index=True,index_label='index')
+# test_data.to_csv("Data/test_cold", index=True,index_label='index')
 # test_data_drop.to_csv("Data/test_drop", index=True,index_label='index')
 
-print()
