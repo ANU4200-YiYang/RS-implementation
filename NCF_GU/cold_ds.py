@@ -57,5 +57,5 @@ for i in cold_user.index:
     # print(train_data[train_data['user']==i].item)
 train_data.to_csv("Data/train_cold", index=True,index_label='index')
 # test_data.to_csv("Data/test_cold", index=True,index_label='index')
-test_data_cold.to_csv("Data/test_drop", index=True,index_label='index')
+test_data_cold.to_csv("Data/test_cold", index=True,index_label='index')
 
