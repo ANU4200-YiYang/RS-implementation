@@ -7,15 +7,19 @@ import config
 
 def load_all():
     # read train ratings, 994169 rows
-    train_data = pd.read_csv(config.train_rating, sep='\t',
+    train_data_origin = pd.read_csv(config.train_rating, sep='\t',
                              header=None, names=['user', 'item'],
                              usecols=[0, 1], dtype={0: np.int32, 1: np.int32})
+    train_data = pd.read_csv("Data/train_cold",
+
+                             usecols=[1, 2], dtype={1: np.int32, 2: np.int32})
+    # train_data=train_data_origin
 
     #  6040 user
-    user_num = train_data['user'].max() + 1
+    user_num = train_data_origin['user'].max() + 1
     # same as train_data.user.nunique()
     # max item id 3706
-    item_num = train_data['item'].max() + 1
+    item_num = train_data_origin['item'].max() + 1
     # less than train_data.item.nunique()
     # transfer to list, len(data) = 994169
     train_data = train_data.values.tolist()
