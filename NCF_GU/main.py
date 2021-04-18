@@ -61,7 +61,7 @@ for epoch in range(20):
 		print(label)
 		exit()
 
-		model.zero_grad()
+		optimizer.zero_grad()
 		prediction = model(user, item)
 		loss = loss_function(prediction, label)
 		loss.backward()
