@@ -1,0 +1,26 @@
+1 Apr14_15-48-08_LAPTOP-T2D7KNRC batch_size=256 lr=0.001 dropout=0 num_layers=3 factor_num=32  Best epoch 006: HR = 0.677, NDCG = 0.408
+2 Apr27_12-37-47_LAPTOP-T2D7KNRC batch_size=256 lr=0.01 dropout=0 num_layers=3 factor_num=32   Best epoch 014: HR = 0.662, NDCG = 0.395
+3 Apr27_14-20-39_LAPTOP-T2D7KNRC batch_size=256 lr=0.0001 dropout=0 num_layers=3 factor_num=32 Best epoch 009: HR = 0.668, NDCG = 0.396 
+
+4 Apr27_17-47-52_LAPTOP-T2D7KNRC batch_size=128 lr=0.001 dropout=0 num_layers=3 factor_num=32  Best epoch 006: HR = 0.678, NDCG = 0.408
+5 Apr27_19-57-36_LAPTOP-T2D7KNRC batch_size=512 lr=0.001 dropout=0 num_layers=3 factor_num=32  Best epoch 005: HR = 0.673, NDCG = 0.407
+6 Apr27_21-11-02_LAPTOP-T2D7KNRC batch_size=1024 lr=0.001 dropout=0 num_layers=3 factor_num=32 Best epoch 003: HR = 0.682, NDCG = 0.402
+
+7 May04_19-03-15_LAPTOP-T2D7KNRC batch_size=256 lr=0.001 dropout=0 num_layers=1 factor_num=32 Best epoch 010: HR = 0.680, NDCG = 0.411
+8 May05_09-01-12_LAPTOP-T2D7KNRC batch_size=256 lr=0.001 dropout=0 num_layers=2 factor_num=32 Best epoch 006: HR = 0.676, NDCG = 0.407
+9 May05_10-30-01_LAPTOP-T2D7KNRC batch_size=256 lr=0.001 dropout=0 num_layers=4 factor_num=32 Best epoch 006: HR = 0.677, NDCG = 0.409
+10May05_12-03-08_LAPTOP-T2D7KNRC batch_size=256 lr=0.001 dropout=0 num_layers=5 factor_num=32 Best epoch 006: HR = 0.679, NDCG = 0.408
+
+11May05_17-30-46_LAPTOP-T2D7KNRC batch_size=256 lr=0.001 dropout=0 num_layers=3 factor_num=8  Best epoch 016: HR = 0.670, NDCG = 0.400
+12May05_18-31-46_LAPTOP-T2D7KNRC batch_size=256 lr=0.001 dropout=0 num_layers=3 factor_num=16 Best epoch 008: HR = 0.675, NDCG = 0.403
+13May05_19-45-45_LAPTOP-T2D7KNRC batch_size=256 lr=0.001 dropout=0 num_layers=3 factor_num=64 Best epoch 003: HR = 0.670, NDCG = 0.403
+
+14May05_21-35-56_LAPTOP-T2D7KNRC batch_size=256 lr=0.001 dropout=0.2 num_layers=3 factor_num=32 Best epoch 019: HR = 0.683, NDCG = 0.412
+15May05_22-41-50_LAPTOP-T2D7KNRC batch_size=256 lr=0.001 dropout=0.5 num_layers=3 factor_num=32 Best epoch 014: HR = 0.684, NDCG = 0.413      
+16May11_16-53-13_LAPTOP-T2D7KNRC batch_size=256 lr=0.001 dropout=0.8 num_layers=3 factor_num=32 Best epoch 016: HR = 0.689, NDCG = 0.413
+
+17May11_18-58-10_LAPTOP-T2D7KNRC batch_size=1024 lr=0.001 dropout=0.8 num_layers=3 factor_num=32 Best epoch 010: HR = 0.682, NDCG = 0.409
+
+
+
+
