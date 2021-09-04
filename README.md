@@ -1,2 +1,2 @@
 # RS-implementation
-my RS practice code and implementation 
+my RS study code,practice and implementation code 
