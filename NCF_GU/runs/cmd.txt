@@ -1,4 +1,0 @@
-
-cd D:\desktop\ANUwattle\2021s1\ENGN4200\github\RS-implementation\NCF_GU\runs
-tensorboard --logdir=Apr27_17-47-52_LAPTOP-T2D7KNRC
-tensorboard --logdir=May11_16-53-13_LAPTOP-T2D7KNRC
