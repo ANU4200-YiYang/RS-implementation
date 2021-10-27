@@ -149,7 +149,7 @@ class NCF(nn.Module):
             output_embedding = user_GMF_embed*item_GMF_embed
             # print(output_embedding)
             # exit()
-            prediction = self.predict_layer_5(output_embedding).view(-1)
+            prediction = self.predict_layer_6(output_embedding).view(-1)
             # prediction = torch.sum(output_embedding, dim=-1).view(-1)
 
         # prediction = torch.sum(output_embedding, dim=-1).view(-1)
